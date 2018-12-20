@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cookies</title>
+    <script type="text/javascript">
+        function WriteCookie()
+        {
+            if(( document.myform.username.value == "" )&&(document.myform.password.value="")){
+                alert("Enter some value!");
+                return;
+            }
+            document.cookie="username=" + cookievalue1;
+            document.cookie="password"=" + cookievalue2;
+            document.write ("Setting Cookies : " + "username=" + cookievalue1 );
+            document.write ("Setting Cookies : " + "password=" + cookievalue2 );
+        }
+        //-->
+    </script>
+</head>
+<body>
+<form name="myform">
+    Username <input type="text" name="username"/><br/><br/>
+    Password <input type="text" name="password"/><br/>
+    <input type="button" name="submit" value="Submit" onclick="writeCookie();"/>
+</form>
+
+</body>
+</html>

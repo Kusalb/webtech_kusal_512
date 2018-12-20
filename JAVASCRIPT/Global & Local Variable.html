@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Global and Local Variable</title>
+</head>
+<script type="text/javascript">
+    var champion = "fizz" //global
+
+    function printChampion(){
+        var champion = "fizz" //local
+        document.write(champion + " Inside function. <br/>");
+    }
+    printChampion();
+    document.write(champion +" Outside the function. <br/>");
+</script>
+
+<body>
+
+</body>
+</html>

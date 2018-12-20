@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Interval Function</title>
+</head>
+<body>
+<script type="text/javascript">
+    function printTime(){
+        var now = new Date();
+        var hours = now.getHours();
+        var mins = now.getMinutes();
+        var seconds = now.getSeconds();
+        document.write(hours+":"+mins+":"+seconds+"<br/>");
+    }
+    setInterval("printTime()",1000);
+
+</script>
+
+</body>
+</html>

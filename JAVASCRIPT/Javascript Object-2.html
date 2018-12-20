@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Javascript Object</title>
+    <script type="text/javascript">
+        function person(name, age){
+            this.name = name;
+            this.age = age;
+        }
+        /*Creating a new instance of object*/
+        var bucky = new person("Bucky roberts", 24);
+        var taylor = new person("Taylor Swift", 20);
+    </script>
+</head>
+<body>
+<script type="text/javascript">
+    document.write(bucky.name);
+    document.write(bucky.age);
+    document.write(taylor.name);
+    document.write(taylor.age);
+</script>
+</body>
+</html>

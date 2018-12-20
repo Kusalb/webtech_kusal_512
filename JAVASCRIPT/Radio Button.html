@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Submitting Form</title>
+    <script type="text/javascript">
+        function is_checked(){
+            var Yes_checked = document.getElementById('auto_renew_yes').checked;
+            var No_checked = document.getElementById('auto_renew_no').checked;
+            if(Yes_checked == false && No_checked == false){
+                alert('Please select an option');
+                return false;
+            }else{
+                return true;
+            }
+        }
+
+    </script>
+</head>
+
+<body>
+<form action="submission.html" method="get" onsubmit="return is_checked();">
+   <p>Do you want to renew your membership?</p>
+    Yes<input type="radio" name="auto_renew" value="yes" id="auto_renew_yes"/>
+    No<input type="radio" name="auto_renew" value="no" id="auto_renew_no"/><br/>
+    <input type="submit" value="Submit"/>
+</form>
+</body>
+</html>

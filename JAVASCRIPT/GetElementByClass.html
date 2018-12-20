@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Get Element By Class</title>
+    <script type="text/javascript">
+        function changeStyle() {
+            var paragraph = document.getElementsByClassName('para');
+
+            var changeText = paragraph[0].style.color = "green";
+            var changeText = paragraph[1].style.backgroundColor = "blue";
+            var changeText = paragraph[2].style.fontStyle= "italic";
+        }
+    </script>
+
+</head>
+
+<body>
+<p class="para">Some text for this tutorials</p>
+<p class="para">Some text for this tutorials</p>
+<p class="para">Some text for this tutorials</p>
+
+<button onclick="changeStyle()">Submit</button>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Submitting Form</title>
+    <script type="text/javascript">
+        function check_info(){
+            var username = document.getElementById('username').value;
+            var password = document.getElementById('password').value;
+            if(username == "" || password ==""){
+                alert('Please fill in all fields');
+                return false;
+            }else{
+                return true;
+            }
+        }
+
+    </script>
+</head>
+
+<body>
+    <form action="submission.html" method="post" onsubmit="return check_info();">
+        Username:<input type="text" name="username" id="username"/><br/><br/>
+        Password:<input type="text" name="password" id="password"/><br/>
+        Gender:
+        <input type="radio" name="gender" value="male" id="male"/>Male
+               <input type="radio" name="gender" value="female" id="female"/>Female<br/>
+        <input type="submit" value="login"/>
+    </form>
+</body>
+</html>

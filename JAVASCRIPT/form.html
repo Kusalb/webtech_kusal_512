@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        function checkForm(form){
+            if(form.username.value==""){
+                alert("ERROR:Username cannot not valied !");
+                form.username.focus();
+                return false;
+            }
+        }
+    </script>
+</head>
+<body>
+<form method="post">
+    <fieldset>
+        <legend>Form</legend>
+          <label for="username">Name</label><br>
+         <input type="text" name="username" id="username"><br>
+
+         <label for="email">Email:</label><br>
+        <input type="email" name="email" id="email"><br>
+
+        <label for="password">Password</label><br>
+        <input type="password" id="password" name="password"><br>
+
+        <label for="password1">Re-type Password</label><br>
+     <input type="password" name="password1" id="password1"><br>
+
+        <label for="gender">Gender</label><br>
+        Male: <input type="radio" name="gender" id="gender" value="Male">
+         Female:   <input type="radio" name="gender" value="Female"><br>
+           <input type="reset"  value="Reset">
+            <button type="submit" value="Submit">Submit</button>
+    </fieldset>
+</form>
+</body>
+</html>

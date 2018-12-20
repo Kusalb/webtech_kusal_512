@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Alert Message</title>
+    <script type="text/javascript">
+        function alertMessage() {
+            alert("Welcome Deerwalk!");
+        }
+    </script>
+</head>
+<body onload="alert('Hello!')" onclose="alert('are you sure')">
+<p>Click the button to display an alert message.</p>
+
+<button onclick="alertMessage()">Click Me</button>
+<br/><br/>
+
+<form>
+    <fieldset>
+        <legend>Javascript Option</legend>
+       Select Country: <select name="country">
+            <option value="india">India</option>
+            <option value="china">China</option>
+            <option value="nepal" selected>Nepal</option>
+            <option value="bangaladesh">Bangaladesh</option>
+        </select><br/><br/>
+
+        Gender:<input type="radio" name="male" value="male" selected>Male
+               <input type="radio" name="male" value="female">Female <br/><br/>
+
+        Choose Gender:<select name="gender">
+        <option value="male" selected>Male</option>
+        <option value="female">female</option>
+    </select>
+    </fieldset>
+
+</form>
+
+
+</body>
+</html>

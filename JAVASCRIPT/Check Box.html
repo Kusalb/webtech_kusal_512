@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Javascript Form Validation(Check Boxes)</title>
+    <script type="text/javascript">
+
+        function is_checked(){
+            var sports = document.getElementById('sports').checked;
+            var electronics = document.getElementById('electronics').checked;
+            var tools = document.getElementById('tools').checked;
+
+            if(sports==false && electronics==false && tools==false){
+                alert('Please check a category');
+                return false;
+            }else{
+                return true;
+            }
+        }
+    </script>
+</head>
+<body>
+    <form action="submission.html" method="get" onsubmit="return is_checked()">
+        <p>Please select some categories that you are interested in?</p>
+        Sports<input type="checkbox" name="interests" value="sports" id="sports"><br/>
+        Electronics<input type="checkbox" name="interests" value="electronics" id="electronics"><br/>
+        Tools<input type="checkbox" name="interests" value="tools" id="tools"/><br/>
+        <input type="submit" value="submit">
+    </form>
+</body>
+</html>
