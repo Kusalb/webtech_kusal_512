@@ -1,0 +1,16 @@
+tutorials {
+        margin:10px;
+        background-color:#ccff00;
+        font-family:verdana,helvetica,sans-serif;
+        }
+        name {
+        display:block;
+        font-weight:bold;
+        }
+        url {
+        display:block;
+        color:#636363;
+        font-size:small;
+        font-style:italic;
+        }
+        }
